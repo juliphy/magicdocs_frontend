@@ -457,7 +457,7 @@ i.far {
 }
 
 .okimg {
-	background-image: url(icons/ok.png);
+	background-image: url(../icons/ok.png);
 	width: 40px!important;
 	height: 40px!important;
 	background-position: center;
@@ -474,31 +474,31 @@ i.far {
 }
 
 .doc.act>.ico {
-	background-image: url(icons/docac.svg);
+	background-image: url(../icons/docac.svg);
 }
 
 .pos>.ico {
-	background-image: url(icons/posin.svg);
+	background-image: url(../icons/posin.svg);
 }
 
 .pos.act>.ico {
-	background-image: url(icons/posac.svg);
+	background-image: url(../icons/posac.svg);
 }
 
 .pov>.ico {
-	background-image: url(icons/notin.svg);
+	background-image: url(../icons/notin.svg);
 }
 
 .pov.act>.ico {
-	background-image: url(icons/notac.svg);
+	background-image: url(../icons/notac.svg);
 }
 
 .men>.ico {
-	background-image: url(icons/menuin.svg);
+	background-image: url(../icons/menuin.svg);
 }
 
 .men.act>.ico {
-	background-image: url(icons/menuac.svg);
+	background-image: url(../icons/menuac.svg);
 }
 
 .qr_title {
@@ -546,7 +546,7 @@ i.far {
 }
 
 .pshicon, .nshicon, .vshicon, .cshicon {
-  background-image: url(icons/shtrihinc.png);
+  background-image: url(../icons/shtrihinc.png);
   background-size: contain;
   background-position: center;
   /* margin: auto; */
@@ -564,14 +564,14 @@ i.far {
 }
 
 .pshicon.act, .nshicon.act, .vshicon.act, .cshicon.act {
-	background-image: url(icons/shtrihact.png)!important;
+	background-image: url(../icons/shtrihact.png)!important;
 }
 .pqricon.act, .nqricon.act, .vqricon.act, .cqricon.act {
-	background-image: url(icons/qrcodeact.png)!important;
+	background-image: url(../icons/qrcodeact.png)!important;
 }
 
 .pqricon, .nqricon, .vqricon, .cqricon  {
-    background-image: url(icons/qrcodeinc.png);
+    background-image: url(../icons/qrcodeinc.png);
     background-size: contain;
     background-position: center;
     /* margin: auto; */
