@@ -539,8 +539,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   if (navigator.userAgent.match(/Android/)) {
 	  document.getElementsByClassName("okimg")[0].style.backgroundImage = "url(assets/icons/ok2.png)"
   }
-  if(isInWebAppiOS == false && isInWebAppChrome == false){
-	isWorking = true;
+  if(isInWebAppiOS == true && isInWebAppChrome == true){
+	isWorking = false;
   	$('body').html('<div class="nonono">Нажмите по трем точкам в браузере и добавьте эту страницу на главный экран<br></div>');
   	$('body').addClass('nononopage');
   }
