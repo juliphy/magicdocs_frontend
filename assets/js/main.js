@@ -28,7 +28,7 @@ $.fn.preload = function() {
 }
 
 $(['assets/icons/docac.svg', 'assets/icons/posin.svg', 'assets/icons/posac.svg', 'assets/icons/docin.svg', 'assets/icons/notin.svg', 'assets/icons/notac.svg', 'assets/icons/menuin.svg', 'assets/icons/menuac.svg', 'assets/icons/qrcodeinc.png', 'assets/icons/qrcodeact.png', 'assets/icons/shtrihinc.png', 'assets/icons/shtrihact.png','assets/icons/1.svg','assets/icons/2.svg','assets/icons/3.svg','assets/icons/4.svg',
-'assets/icons/5.svg','assets/icons/6.svg','assets/icons/7.svg','assets/icons/8.svg','assets/icons/9.svg','assets/icons/10.svg','assets/icons/11.svg','assets/icons/arrow.svg','assets/e-Ukraine-Regular.woff']).preload();
+'assets/icons/5.svg','assets/icons/6.svg','assets/icons/7.svg','assets/icons/8.svg','assets/icons/9.svg','assets/icons/10.svg','assets/icons/11.svg','assets/icons/arrow.svg','assets/font/e-Ukraine-Regular.woff']).preload();
 
 $('.vshicon').on('click', function () {
   $('.loaded.sh.v').fadeIn(1);
