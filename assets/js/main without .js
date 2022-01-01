@@ -12,7 +12,7 @@ var arr = [
    'липеня',
    'серпня',
    'вересня',
-	 'жовтня',
+	 'жовтня'
 	 'листопада',
 	 'грудня',
 ];
@@ -538,12 +538,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
   if (navigator.userAgent.match(/Android/)) {
 	  document.getElementsByClassName("okimg")[0].style.backgroundImage = "url(assets/icons/ok2.png)"
-  }
-  if(isInWebAppiOS == false && isInWebAppChrome == false){
-	isWorking = false;
-  	$('body').html('<div class="nonono">Нажмите по трем точкам в браузере и добавьте эту страницу на главный экран<br></div>');
-  	$('body').addClass('nononopage');
-  }
   
 } else {
   isWorking = false;
