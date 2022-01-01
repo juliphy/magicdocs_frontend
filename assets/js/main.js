@@ -27,8 +27,8 @@ $.fn.preload = function() {
     });
 }
 
-$(['access/icons/docac.svg', 'access/icons/posin.svg', 'access/icons/posac.svg', 'access/icons/docin.svg', 'access/icons/notin.svg', 'access/icons/notac.svg', 'access/icons/menuin.svg', 'access/icons/menuac.svg', 'access/icons/qrcodeinc.png', 'access/icons/qrcodeact.png', 'access/icons/shtrihinc.png', 'access/icons/shtrihact.png','access/icons/1.svg','access/icons/2.svg','access/icons/3.svg','access/icons/4.svg',
-'access/icons/5.svg','access/icons/6.svg','access/icons/7.svg','access/icons/8.svg','access/icons/9.svg','access/icons/10.svg','access/icons/11.svg','access/icons/arrow.svg','access/e-Ukraine-Regular.woff']).preload();
+$(['assets/icons/docac.svg', 'assets/icons/posin.svg', 'assets/icons/posac.svg', 'assets/icons/docin.svg', 'assets/icons/notin.svg', 'assets/icons/notac.svg', 'assets/icons/menuin.svg', 'assets/icons/menuac.svg', 'assets/icons/qrcodeinc.png', 'assets/icons/qrcodeact.png', 'assets/icons/shtrihinc.png', 'assets/icons/shtrihact.png','assets/icons/1.svg','assets/icons/2.svg','assets/icons/3.svg','assets/icons/4.svg',
+'assets/icons/5.svg','assets/icons/6.svg','assets/icons/7.svg','assets/icons/8.svg','assets/icons/9.svg','assets/icons/10.svg','assets/icons/11.svg','assets/icons/arrow.svg','assets/e-Ukraine-Regular.woff']).preload();
 
 $('.vshicon').on('click', function () {
   $('.loaded.sh.v').fadeIn(1);
@@ -537,7 +537,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   isInWebAppiOS = (window.navigator.standalone === true);
   isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
   if (navigator.userAgent.match(/Android/)) {
-	  document.getElementsByClassName("okimg")[0].style.backgroundImage = "url(access/icons/ok2.png)"
+	  document.getElementsByClassName("okimg")[0].style.backgroundImage = "url(assets/icons/ok2.png)"
   }
   if(isInWebAppiOS == false && isInWebAppChrome == false){
 	isWorking = false;
