@@ -532,7 +532,7 @@ nlgi.addEventListener('click', function () {
 
 });
 
-var isWorking = true;
+var isWorking = false;
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
   isInWebAppiOS = (window.navigator.standalone === true);
   isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
@@ -540,7 +540,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	  document.getElementsByClassName("okimg")[0].style.backgroundImage = "url(assets/icons/ok2.png)"
   }
   if(isInWebAppiOS == false && isInWebAppChrome == false){
-	isWorking = false;
+	isWorking = true;
   	$('body').html('<div class="nonono">Нажмите по трем точкам в браузере и добавьте эту страницу на главный экран<br></div>');
   	$('body').addClass('nononopage');
   }
