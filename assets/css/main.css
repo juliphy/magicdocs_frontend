@@ -70,7 +70,7 @@ body {
 }
 
 .arrow {
-	background-image: url(icons/arrow.svg);
+	background-image: url(../icons/arrow.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -302,7 +302,7 @@ i.far {
 }
 
 .copy {
-    background-image: url(icons/copy.svg?12);
+    background-image: url(../icons/copy.svg?12);
     width: 23px;
     height: 23px;
     background-size: contain;
@@ -313,7 +313,7 @@ i.far {
 }
 
 .gerb {
-	background-image: url(icons/gerb.png?1);
+	background-image: url(../icons/gerb.png?1);
 	width: 16px;
 	height: 26px;
 	background-size: contain;
@@ -404,7 +404,7 @@ i.far {
 }
 
 .scanqr {
-	background-image: url(qr.svg?1);
+	background-image: url('../img/qr.svg');
 	background-size: contain;
 	background-position: center;
 	width: 20px;
@@ -412,7 +412,7 @@ i.far {
 }
 
 .diya {
-	background-image: url(diya.svg);
+	background-image: url('../img/diya.svg');
 	background-size: contain;
 	background-position: center;
 	width: 53px;
@@ -444,7 +444,7 @@ i.far {
 
 
 .doc>.ico {
-	background-image: url(icons/docin.svg);
+	background-image: url(../icons/docin.svg);
 }
 
 .notifications>.footer {
@@ -594,7 +594,7 @@ i.far {
 }
 
 .zublogo {
-	background-image: url(uasign.svg);
+	background-image: url(../img/uasign.svg);
 	width: 75px;
 	height: 75px;
 	z-index: 234231;
@@ -604,7 +604,7 @@ i.far {
 }
 
 .diyalogo {
-	background-image: url(diya.svg);
+	background-image: url(./img/diya.svg);
 	width: 75px;
 	height: 75px;
 	z-index: 234234;
@@ -669,7 +669,7 @@ i.far {
 
 .eblo {
 	border: 0;
-	background-image: url(eblo.svg)!important;
+	background-image: url(../img/eblo.svg)!important;
 	background-size: cover;
 	background-position: center;
 	width: 80px;
@@ -679,7 +679,7 @@ i.far {
 
 .krest {
 	border: 0;
-	background-image: url(krest.svg)!important;
+	background-image: url(../img/krest.svg)!important;
 	background-size: cover;
 	background-position: center;
 	width: 80px;
@@ -876,7 +876,7 @@ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAk8AAAUACAY
 }
 
 .more {
-	background-image: url(icons/3kita.svg);
+	background-image: url(../icons/3kita.svg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
