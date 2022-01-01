@@ -2,12 +2,12 @@
 	font-family: "e-Ukraine";
 	font-weight: 400;
 	font-display: swap;
-	src: local("e-Ukraine"), local("e-Ukraine-Regular"), url(assets/font/e-Ukraine-Regular.woff) format("woff")
+	src: local("e-Ukraine"), local("e-Ukraine-Regular"), url(e-Ukraine-Regular.woff) format("woff")
 }
 
 @font-face {
 	font-family: 'e-UkraineHead';
-	src: url(assets/font/e-UkraineHead-Light.woff) format("woff");
+	src: url(e-UkraineHead-Light.woff) format("woff");
 	src: local("e-UkraineHead"), local("e-UkraineHead-Medium"), url(e-UkraineHead-Medium.woff) format("woff");
 	font-weight: 300;
 	font-style: normal;
