@@ -111,47 +111,47 @@ i.far {
 }
 
 .sos:nth-child(1)>span>div {
-	background-image: url(icons/1.svg);
+	background-image: url(../icons/1.svg);
 }
 
 .sos:nth-child(2)>span>div {
-	background-image: url(icons/2.svg);
+	background-image: url(../icons/2.svg);
 }
 
 .sos:nth-child(3)>span>div {
-	background-image: url(icons/3.svg);
+	background-image: url(../icons/3.svg);
 }
 
 .sos:nth-child(4)>span>div {
-	background-image: url(icons/4.svg);
+	background-image: url(../icons/4.svg);
 }
 
 .sos:nth-child(5)>span>div {
-	background-image: url(icons/5.svg);
+	background-image: url(../icons/5.svg);
 }
 
 .sos:nth-child(6)>span>div {
-	background-image: url(icons/6.svg);
+	background-image: url(../icons/6.svg);
 }
 
 .sos:nth-child(7)>span>div {
-	background-image: url(icons/7.svg);
+	background-image: url(../icons/7.svg);
 }
 
 .sos:nth-child(8)>span>div {
-	background-image: url(icons/8.svg);
+	background-image: url(../icons/8.svg);
 }
 
 .sos:nth-child(9)>span>div {
-	background-image: url(icons/9.svg);
+	background-image: url(../icons/9.svg);
 }
 
 .sos:nth-child(10)>span>div {
-	background-image: url(icons/10.svg);
+	background-image: url(../icons/10.svg);
 }
 
 .sos:nth-child(11)>span>div {
-	background-image: url(icons/11.svg);
+	background-image: url(../icons/11.svg);
 }
 
 .sos>span>div {
