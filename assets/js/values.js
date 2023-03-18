@@ -1,3 +1,12 @@
+fetch('http://127.0.0.1:3132/api?id=w0n')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
+
+
 // Активировать документы (true - включены, false - отключены)
 var isRightsEnabled = false; // Права
 var isCovidCertificateEnabled = false; // COVID-сертификат
