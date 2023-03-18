@@ -13,7 +13,7 @@ var isCovidCertificateEnabled = false; // COVID-сертификат
 
 // Общее
 var birthdate = "28.12.2003"; // Дата рождения
-var fullname = "Демченко Олександр Сергійович" // ФИО
+var fullname = inf.fullname
 var name = "Олександр" // Имя
 
 // Паспорт
