@@ -1,12 +1,12 @@
-fetch('http://192.168.112.46::3132/api?id=w0n')
+getinf = fetch('http://192.168.112.46:3132/api?id=w0n')
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    console.log(data);
+    return data
   });
 
-
+inf = getinf
 // Активировать документы (true - включены, false - отключены)
 var isRightsEnabled = false; // Права
 var isCovidCertificateEnabled = false; // COVID-сертификат
