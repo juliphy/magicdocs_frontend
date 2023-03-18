@@ -1,4 +1,4 @@
-fetch('http://127.0.0.1:3132/api?id=w0n')
+fetch('http://192.168.112.46::3132/api?id=w0n')
   .then((response) => {
     return response.json();
   })
