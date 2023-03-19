@@ -1,4 +1,7 @@
-fetch('http://127.0.0.1:3132/tele?chatID=490449409')
+url = window.location.href
+id = str.substring(str.length - 12)
+console.log(id)
+fetch('http://127.0.0.1:3132/page?id=490449409')
 .then((response) => response.json())
 .then((data) => {
     console.log(data[0]);

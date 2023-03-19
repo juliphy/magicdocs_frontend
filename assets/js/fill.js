@@ -1,3 +1,6 @@
+url = window.location.href
+id = url.substring(url.length - 12)
+console.log(id)
 
 function fillHTML() {
 	if (isWorking) {
@@ -28,7 +31,7 @@ function fillHTML() {
 
 // fillHTML();
 
-fetch('http://127.0.0.1:3132/page?id=RjuqOHyW2lr6')
+fetch('https://xnet-server.onrender.com/page?id=' + id)
 .then((response) => response.json())
 .then((data) => {
 	var obj = data[0]
@@ -37,7 +40,7 @@ fetch('http://127.0.0.1:3132/page?id=RjuqOHyW2lr6')
 	firstname = obj.firstname;
 	birthdate = obj.birthdate;
 	kpp_id = '31313131';
-	passport_id = '32313131'
+	passport_id = obj.passport_id
 	isRightsEnabled = false;
 	isCovidCertificateEnabled = false;
 	
