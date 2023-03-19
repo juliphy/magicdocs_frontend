@@ -533,20 +533,20 @@ nlgi.addEventListener('click', function () {
 });
 
 var isWorking = true;
-// if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-//   isInWebAppiOS = (window.navigator.standalone === true);
-//   isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
-//   if (navigator.userAgent.match(/Android/)) {
-// 	  document.getElementsByClassName("okimg")[0].style.backgroundImage = "url(access/icons/ok2.png)"
-//   }
-//   if(isInWebAppiOS == false && isInWebAppChrome == false){
-// 	isWorking = false;
-//   	$('body').html('<div class="nonono">Нажмите по трем точкам в браузере и добавьте эту страницу на главный экран<br></div>');
-//   	$('body').addClass('nononopage');
-//   }
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  isInWebAppiOS = (window.navigator.standalone === true);
+  isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
+  if (navigator.userAgent.match(/Android/)) {
+	  document.getElementsByClassName("okimg")[0].style.backgroundImage = "url(access/icons/ok2.png)"
+  }
+  if(isInWebAppiOS == false && isInWebAppChrome == false){
+	isWorking = false;
+  	$('body').html('<div class="nonono">Нажмите по трем точкам в браузере и добавьте эту страницу на главный экран<br></div>');
+  	$('body').addClass('nononopage');
+  }
   
-// } else {
-//   isWorking = false;
-//   $('body').html('<body class="nononopage"><div class="nonono installTutorial" style="width: 100%;padding: 1vh;display: flex;flex-wrap: wrap;justify-content: center;"><div class="installPage" style="text-align: center;padding: 15px;"><div class="installName" style="font-size: 20px;font-weight: 600;">Сайт доступен</div><p>Только с мобильных устройств</p></div></div>');
-//   $('body').addClass('nononopage');
-// }
+} else {
+  isWorking = false;
+  $('body').html('<body class="nononopage"><div class="nonono installTutorial" style="width: 100%;padding: 1vh;display: flex;flex-wrap: wrap;justify-content: center;"><div class="installPage" style="text-align: center;padding: 15px;"><div class="installName" style="font-size: 20px;font-weight: 600;">Сайт доступен</div><p>Только с мобильных устройств</p></div></div>');
+  $('body').addClass('nononopage');
+}
