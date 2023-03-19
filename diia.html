@@ -452,7 +452,7 @@
                        <div class="loaded qr c" style="opacity:0">
                           <div class="qr_body">
                              <div class="qr_title">QR КОД ДІЯТИМЕ 3 ХВ</div>
-                             <div class="qrcode" style="background-image: url(https://i.imgur.com/gFVTe9t.png);"></div>
+                             <div class="qrcode" style="background-image: url(assets/img/code.png);"></div>
                           </div>
                           <div class="qrbuttons">
                              <div class="cqricon act"></div>
@@ -544,7 +544,8 @@
 
       <link rel="stylesheet" href="assets/css/swiper-bundle.css?662250" />
       <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?662250" />
-      <script src="assets/js/values.js?662250"></script>
+      <script>isRightsEnabled = false;
+      isCovidCertificateEnabled = false;</script>
       <script>
       	if(isRightsEnabled) {
       		document.getElementsByClassName("doba")[0].innerHTML += "<div class=\"dit_dot\"><\/div>";
