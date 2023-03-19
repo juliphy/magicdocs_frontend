@@ -532,7 +532,7 @@ nlgi.addEventListener('click', function () {
 
 });
 
-// var isWorking = true;
+var isWorking = true;
 // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 //   isInWebAppiOS = (window.navigator.standalone === true);
 //   isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
