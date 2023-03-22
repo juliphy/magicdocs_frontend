@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "e-Ukraine";
+	font-weight: 400;
+	font-display: swap;
+	src: local("e-Ukraine"), local("e-Ukraine-Regular"), url(e-Ukraine-Regular.woff) format("woff")
+}
+
+@font-face {
+	font-family: 'e-UkraineHead';
+	src: url(e-UkraineHead-Light.woff) format("woff");
+	src: local("e-UkraineHead"), local("e-UkraineHead-Medium"), url(e-UkraineHead-Medium.woff) format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap
+}
+
+@media (max-width: 480px) {
+    .container {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5%;
+    }
+
+
+
+.container { 
+    width: 80%;
+    padding: 10px;
+    margin-top: 5%;
+    border: 3px solid black;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.text {
+    font-family: 'e-UkraineHead';
+    font-size: 25px;
+    padding-bottom: 2px;
+}
+
+.btn {
+    margin-top: 15px;
+    width: 80%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.ids {
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid grey;
+
+}
+}
