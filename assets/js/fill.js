@@ -10,6 +10,8 @@ function fillHTML() {
 		for (el of document.getElementsByClassName("fullname")) {
 			el.innerHTML = fullname;
 		}
+		document.getElementsByClassName('image')[0].style.backgroundImage = "url(" + imageFace + ")";
+		document.getElementsByClassName('sign')[0].style.backgroundImage = "url(" + imageSign + ")";
 		document.getElementsByClassName("menutitile")[0].innerHTML = "Вітаємо, " + firstname;
 		document.getElementsByClassName("passport_id")[0].innerHTML = "Номер: " + passport_id;
 
@@ -41,8 +43,11 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 	birthdate = obj.birthdate;
 	kpp_id = '31313131';
 	passport_id = obj.passport_id
+	imageFace = obj.urlFace
+	imageSign = obj.urlSign
+	
 	isRightsEnabled = false;
 	isCovidCertificateEnabled = false;
-	
+	console.log(imageFace, imageSign)
 	fillHTML()
 })
