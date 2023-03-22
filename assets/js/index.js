@@ -5,15 +5,18 @@ formElement.addEventListener('submit', (e) => {
   // теперь можно извлечь данные
 
   const id = formData.get('id'); // 'John'
-
-  fetch('https://xnet-server.onrender.com/exist?id='+ id)
+  console.log('Pisk')
+  fetch('http://127.0.0.1:3132/exist?id='+ id)
   .then(response => {
-    
+
     if (response.status == 200) { 
+      console.log('200PASS')
       if (window.location.href.slice(window.location.href.length - 10) == 'index.html') { 
+        console.log('if')
         locationWithoutIndex = window.location.href.slice(0,-10)
         window.location = locationWithoutIndex + 'diia.html?id=' + id;
-      } else { 
+      } else {
+        console.log('else') 
         window.location = window.location.href + 'diia.html?id=' + id;
       }
     } else { 
