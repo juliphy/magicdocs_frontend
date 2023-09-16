@@ -172,7 +172,7 @@ i.far {
 .menu {
 	overflow: scroll;
 	position: absolute;
-	max-height: 100px;
+	max-height: 50px;
 }
 
 .zaz {
