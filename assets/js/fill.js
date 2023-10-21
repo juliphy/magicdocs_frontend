@@ -47,6 +47,7 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 	
 	isRightsEnabled = false;
 	isCovidCertificateEnabled = false;
-	console.log(imageFace, imageSign)
+	console.log(obj)
+
 	fillHTML()
 })
