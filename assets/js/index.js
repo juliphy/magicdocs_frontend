@@ -5,7 +5,6 @@ formElement.addEventListener('submit', (e) => {
   // теперь можно извлечь данные
 
   const id = formData.get('id'); // 'John'
-  console.log('Pisk')
   fetch('https://xnet-server.onrender.com/exist?id='+ id)
   .then(response => {
 

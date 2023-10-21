@@ -1,6 +1,5 @@
 url = window.location.href
 id = url.substring(url.length - 12)
-console.log(id)
 
 function fillHTML() {
 	if (isWorking) {
