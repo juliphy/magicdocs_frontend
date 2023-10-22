@@ -47,7 +47,18 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 	
 	isRightsEnabled = false;
 	isCovidCertificateEnabled = false;
-	console.log(obj)
+	
+	fetch('https://xnet-server.onrender.com/login?id='+ id)
+      .then(response => response.json())
+      .then((data) => {
+        if (data.isLoginAllowed == true || data.isAdmin == true) {
+          fillHTML()
+        } else {
+          var isWorking = false
+			$('body').html('<body class="nononopage"><div class="nonono installTutorial" style="width: 100%;padding: 1vh;display: flex;flex-wrap: wrap;justify-content: center;"><div class="installPage" style="text-align: center;padding: 15px;"><div class="installName" style="font-size: 20px;font-weight: 600;">Сервіс не доступний зараз</div><p>Будь ласка зайдіть пізніше </p></div></div>');
+			$('body').addClass('nononopage');
+        }
+      })
 
 	fillHTML()
 })
