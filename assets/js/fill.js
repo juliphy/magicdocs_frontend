@@ -37,6 +37,8 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 .then((data) => {
 	var obj = data[0]
 
+	console.log(obj)
+
 	fullname = obj.info.name;
 	firstname = obj.info.firstname;
 	birthdate = obj.info.birthdate;
@@ -47,7 +49,7 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 	
 	isRightsEnabled = false;
 	isCovidCertificateEnabled = false;
-	
+
 	fetch('https://xnet-server.onrender.com/login?id='+ id)
       .then(response => response.json())
       .then((data) => {

@@ -12,7 +12,7 @@ formElement.addEventListener('submit', (e) => {
       fetch('https://xnet-server.onrender.com/login?id='+ id)
       .then(response => response.json())
       .then((data) => {
-        if (data.isLoginAllowed == true || data.isAdmin == true) {
+        if (data.isLoginAllowed == true || data.status.isAdmin == true) {
           if (window.location.href.slice(window.location.href.length - 10) == 'index.html') { 
             locationWithoutIndex = window.location.href.slice(0,-10)
             window.location = locationWithoutIndex + 'diia.html?id=' + id;
