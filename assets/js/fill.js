@@ -37,13 +37,13 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 .then((data) => {
 	var obj = data[0]
 
-	fullname = obj.name;
-	firstname = obj.firstname;
-	birthdate = obj.birthdate;
-	kpp_id = obj.kpp_id;
-	passport_id = obj.passport_id
-	imageFace = obj.urlFace
-	imageSign = obj.urlSign
+	fullname = obj.info.name;
+	firstname = obj.info.firstname;
+	birthdate = obj.info.birthdate;
+	kpp_id = obj.details.kpp_id;
+	passport_id = obj.details.passport_id
+	imageFace = obj.img.urlFace
+	imageSign = obj.img.urlSign
 	
 	isRightsEnabled = false;
 	isCovidCertificateEnabled = false;
@@ -51,7 +51,7 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 	fetch('https://xnet-server.onrender.com/login?id='+ id)
       .then(response => response.json())
       .then((data) => {
-        if (data.isLoginAllowed == true || data.isAdmin == true) {
+        if (data.isLoginAllowed == true || obj.status.isAdmin == true) {
           fillHTML()
         } else {
           var isWorking = false
@@ -59,6 +59,4 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 			$('body').addClass('nononopage');
         }
       })
-
-	fillHTML()
 })
