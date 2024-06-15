@@ -57,11 +57,10 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 	}
 
 	if (imageSign == "null") {
-		// Step 1: Store the initial URL
-		const url = "https://juliphy.github.io/magicdocs_frontend/diia.html?id=qChxbmrs1uPX";
+		
 
 // Step 2: Extract the query parameters from the initial URL
-		const urlObj = new URL(url);
+		const urlObj = new URL(window.location.href);
 		const searchParams = urlObj.search;
 
 // Step 3: Construct the new URL with the desired path and the extracted query parameters
