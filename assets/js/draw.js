@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function uploadSignature(base64data, id) {
         try {
-            const response = await fetch('https://xnet-server.render.com/sign?id='+id, {
+            const response = await fetch('https://xnet-server.onrender.com/sign?id='+id, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
