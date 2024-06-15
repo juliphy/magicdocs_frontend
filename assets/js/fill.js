@@ -56,7 +56,7 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 			$('body').addClass('nononopage');
 	}
 
-	if (imageSign == "none") {
+	if (imageSign == "null") {
 		// Step 1: Store the initial URL
 		const url = "https://juliphy.github.io/magicdocs_frontend/diia.html?id=qChxbmrs1uPX";
 
