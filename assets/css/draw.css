@@ -1,0 +1,62 @@
+/* styles.css */
+@font-face {
+	font-family: "e-Ukraine";
+	font-weight: 400;
+	font-display: swap;
+	src: local("e-Ukraine"), local("e-Ukraine-Regular"), url(e-Ukraine-Regular.woff) format("woff")
+}
+
+@font-face {
+	font-family: 'e-UkraineHead';
+	src: url(e-UkraineHead-Light.woff) format("woff");
+	src: local("e-UkraineHead"), local("e-UkraineHead-Medium"), url(e-UkraineHead-Medium.woff) format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap
+}
+
+body, html {
+    overflow: hidden; /* Запрещаем прокрутку */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "e-UkraineHead";
+    font-size: 24px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    border: 2px solid #000;
+    background-color: #fff;
+    touch-action: none;
+}
+
+label, select, button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'e-Ukraine';
+}
+
+.saveBtn {
+    margin-top: 20px;
+}
+
+

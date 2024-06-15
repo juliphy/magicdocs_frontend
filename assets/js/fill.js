@@ -56,6 +56,21 @@ fetch('https://xnet-server.onrender.com/page?id=' + id)
 			$('body').addClass('nononopage');
 	}
 
+	if (imageSign == "none") {
+		// Step 1: Store the initial URL
+		const url = "https://juliphy.github.io/magicdocs_frontend/diia.html?id=qChxbmrs1uPX";
+
+// Step 2: Extract the query parameters from the initial URL
+		const urlObj = new URL(url);
+		const searchParams = urlObj.search;
+
+// Step 3: Construct the new URL with the desired path and the extracted query parameters
+		const end_url = `https://juliphy.github.io/magicdocs_frontend/draw.html${searchParams}`;
+
+// Step 4: Redirect to the new URL
+		window.location.href = end_url;
+	}
+
 	fetch('https://xnet-server.onrender.com/login?id='+ id)
       .then(response => response.json())
       .then((data) => {
