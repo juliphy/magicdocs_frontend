@@ -7,6 +7,8 @@ formElement.addEventListener('submit', (e) => {
   const id = formData.get('id'); // 'John'
   fetch('https://xnet-server.onrender.com/exist?id='+ id)
   .then(response => {
+    
+    console.log(response.status)
 
     if (response.status == 200) {
       fetch('https://xnet-server.onrender.com/login?id='+ id)

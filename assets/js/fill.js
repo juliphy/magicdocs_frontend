@@ -35,7 +35,7 @@ function fillHTML() {
 fetch('https://xnet-server.onrender.com/page?id=' + id)
 .then((response) => response.json())
 .then((data) => {
-	var obj = data[0]
+	var obj = data
 
 	console.log(obj)
 
